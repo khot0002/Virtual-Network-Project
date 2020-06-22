@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/khot0002/Virtual-Network-Project/MyElkStackNetowrk.drawio
+https://drive.google.com/file/d/1ZhCVrVqhXDMuekasC9-vvi5Rsnhyim-t/view?usp=sharing
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -46,7 +46,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting overload to the network.
-- _Load balancers act as a security control that provides the ability to monitor, detect, and respond to cyber threats. Load balancers also serve to increase the capacity and the reliability of the web applications. The advantage of having a jump box is to access and manage devices in a separate secured zone where the server is monitored and controlled from a trusted machine or network, such as security patches, updates to applications, etc. can all be done in one area and applied to all machines.
+- Load balancers act as a security control that provides the ability to monitor, detect, and respond to cyber threats. Load balancers also serve to increase the capacity and the reliability of the web applications. The advantage of having a jump box is to access and manage devices in a separate secured zone where the server is monitored and controlled from a trusted machine or network, such as security patches, updates to applications, etc. can all be done in one area and applied to all machines.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system metrics.
 - Filebeat collects data about the file system. Filebeat logs and monitors data and forwards them to an indexing service like Elasticsearch or Logstash.   
@@ -94,7 +94,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!https://drive.google.com/file/d/1Ma4APl8hd8X5M0E0VXPbyafRypxwCrbK/view?usp=sharing
+https://drive.google.com/file/d/1Ma4APl8hd8X5M0E0VXPbyafRypxwCrbK/view?usp=sharing
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -105,7 +105,7 @@ We have installed the following Beats on these machines:
 - Filebeats and Metricbeats were both successfully installed on both virtual machines: VM1 and VM2
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._Filebeat collects data about the file system. Filebeat logs and monitors data and forwards them to an indexing service like Elasticsearch or Logstash. Metricbeat collects machine metrics from an operating system, such as uptime and other services that are running on the server. The statistics are collected such as cpu/mem/disk/network metrics, and can also monitor Apache, Docker, Nginx, Redis, etc.
+- Filebeat collects data about the file system. Filebeat logs and monitors data and forwards them to an indexing service like Elasticsearch or Logstash. Metricbeat collects machine metrics from an operating system, such as uptime and other services that are running on the server. The statistics are collected such as cpu/mem/disk/network metrics, and can also monitor Apache, Docker, Nginx, Redis, etc.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -115,7 +115,6 @@ SSH into the control node and follow the steps below:
 - Update the configuration file to include the IP addresses and servers. 
 - Run the playbook, and navigate to the website to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - The playbook file is listed as /ansible.cfg and you copy it to the /etc/ansible directory.
 - The file that needs to be updated is filebeat-configuration.yml and you will need to specify the IP addresses for the VMs.
 - Navigate to http://[your.VM.IP]:5601 in order to verify that the ELK server is running properly.
