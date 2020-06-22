@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-!https://drive.google.com/file/d/1ZhCVrVqhXDMuekasC9-vvi5Rsnhyim-t/view?usp=sharing
+https://github.com/khot0002/Virtual-Network-Project/MyElkStackNetowrk.drawio
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
